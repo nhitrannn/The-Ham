@@ -6,7 +6,7 @@
 }
 
 html {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:white;
 }
 
@@ -23,9 +23,7 @@ a {
     color:white;
 }
 
-.btn-blue {
-    background-color: #18cfab;
-}
+
 /* commen */
 :root {
     --blue: #18cfab; 
