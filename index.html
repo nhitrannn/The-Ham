@@ -148,6 +148,145 @@
             </div>
         </div>
 
+
+        <!-- our company -->
+        <div id="our-company">
+            <div class="image">
+                <!-- <img src="assets/img/laptop.jpg" alt="laptop"> -->
+            </div>
+
+            <div class="skills">
+                <div class="content">
+                    <p class="heading-text">About Our Company</p>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'OurHistory')">OUR STORY</button>
+                        <button class="tablinks" onclick="openCity(event, 'OurPhotography')">OUR PHOTOGRAPHY</button>
+                        <button class="tablinks" onclick="openCity(event, 'OurSkills')">OUR SKILLS</button>
+                    </div>
+                
+                    <div id="OurHistory" class="tabcontent">
+                        <div class="container">
+                          <div class="skills user-interface padding-left">USER INTERFACE</div>
+                        </div>
+                        <div class="container">
+                          <div class="skills web-design padding-left">WEB DESIGN</div>
+                        </div>
+                        <div class="container">
+                          <div class="skills wordpress padding-left">WORDPRESS</div>
+                        </div>
+                        <div class="container">
+                          <div class="skills html-css padding-left">HTML & CSS</div>
+                        </div>
+                        <div class="container">
+                            <div class="skills app-design padding-left">APP DESIGN</div>
+                        </div>
+                    </div>
+                    <div id="OurPhotography" class="tabcontent">
+                        <div class="container">
+                            <div class="skills user-interface padding-left">USER INTERFACE</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills web-design padding-left">WEB DESIGN</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills wordpress padding-left">WORDPRESS</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills html-css padding-left">HTML & CSS</div>
+                          </div>
+                          <div class="container">
+                              <div class="skills app-design padding-left">APP DESIGN</div>
+                          </div>
+                    </div>
+                
+                    <div id="OurSkills" class="tabcontent">
+                        <div class="container">
+                            <div class="skills user-interface padding-left">USER INTERFACE</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills web-design padding-left">WEB DESIGN</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills wordpress padding-left">WORDPRESS</div>
+                          </div>
+                          <div class="container">
+                            <div class="skills html-css padding-left">HTML & CSS</div>
+                          </div>
+                          <div class="container">
+                              <div class="skills app-design padding-left">APP DESIGN</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- amazing-work -->
+        <div id="amazing-work">
+            
+            <div class="picture">
+                <p class="text-heading">Our Amazing Work</p>
+                <div class="tab_picture">
+                    <button class="tablink" onclick="openCity(event, 'All')">All</button>
+                    <button class="tablink" onclick="openCity(event, 'GraphicDesign')">Graphic Design</button>
+                    <button class="tablink" onclick="openCity(event, 'WebDesign')">Web Design</button>
+                    <button class="tablink" onclick="openCity(event, 'LandingPages')">Landing Pages</button>
+                    <button class="tablink" onclick="openCity(event, 'WordPress')">WordPress</button>
+                </div>
+
+                <div id="All" class="tab_picture_item">
+                    <img src="assets/img/our-work.png" alt="">
+                    <img src="assets/img/pro-1.jpg" alt="">
+                    <img src="assets/img/pro-2.jpg" alt="">
+                    <img src="assets/img/pro-3.jpg" alt="">
+                    <img src="assets/img/pro-4.jpg" alt="">
+                    <img src="assets/img/pro-5.jpg" alt="">
+                    <img src="assets/img/pro-6.jpg" alt="">
+                    <img src="assets/img/pro-7.jpg" alt="">
+                    <img src="assets/img/pro-8.jpg" alt="">
+                    <img src="assets/img/pro-9.jpg" alt="">
+                    <img src="assets/img/pro-10.jpg" alt="">
+                    <img src="assets/img/pro-11.jpg" alt="">
+                </div>
+                <button class="button"><i class="fas fa-plus"></i>LOAD MORE</button>
+            </div>
+           
+        </div>
+        
     </div>
 </body>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+<!-- <script>
+    function openCity(evt, cityName) {
+      var i, tab_picture_item, tablinks;
+      tab_picture_item = document.getElementsByClassName("tab_picture_item");
+      for (i = 0; i < tab_picture_item.length; i++) {
+        tab_picture_item[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    } -->
+
+</script>
+
+
 </html>

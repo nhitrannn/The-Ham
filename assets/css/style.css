@@ -7,7 +7,6 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-   
 }
 
 ul {
@@ -33,6 +32,7 @@ a {
     --darkblue: #1c2a33;
     --black: #090f14;
     --text: #717171;
+    --background: #090f14;
 }
 
 .blue-color {
@@ -48,6 +48,11 @@ a {
     margin-bottom: 16px;
     color: var(--blue);
 }
+
+.padding-left {
+    padding-left: 12px;
+}
+
 
 
 
@@ -219,9 +224,7 @@ a {
     margin-bottom: 50px;
     font-weight: 300;
     text-align: center;
-
-
- }
+}
 
 .row {
     display: grid;
@@ -247,4 +250,164 @@ a {
 .head:hover {
     color: var(--blue);
 }
+
+/* our-company */
+#our-company {
+    position: relative;
+    width: 100%;
+    top: 90px;
+    background-color: var(--background);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 580px;
+}
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #f1f1f1;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    color: #fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    /* box-shadow: 0 3px var(--blue); */
+    color: var(--blue);
+  }
+  .tab button.active {
+    box-shadow: 0 2px var(--blue);
+    color: var(--blue);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+  }
+
+  .skills .content {
+    margin: 86px 0;
+    position: absolute;
+  }
+  
+  .skills {
+    /* text-align: right; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    
+  }
+
+  .skills p {
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .skills p, .skills .tab {
+      margin-bottom: 16px;
+  }
+  
+  .user-interface {width: 60%; background-color: #9c5da5;}
+  .web-design {width: 80%; background-color: #11b0de;}
+  .wordpress {width: 55%; background-color: #d67f7f;}
+  .html-css {width: 90%; background-color: #20bc9d;}
+  .app-design {width: 70%; background-color: #bb8a36;}
+
+  /*=============== amazing-work ========================*/
+  #amazing-work {
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      top: 90px;
+      /* bottom: 30px; */
+      height: 1012px;
+  }
+
+  .picture {
+      /* position: absolute; */
+      text-align: center;
+      padding: 64px 0;
+  }
+  .tab_picture_item {
+      position: absolute;
+      padding: 0 232px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 72rem; */
+      max-width: 100%;
+      /* grid-column-gap: 40px ;
+      grid-row-gap: 40px ; */
+      width: 100%
+  }
+
+  .tab_picture_item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-heading{
+      font-size: 32px;
+      font-weight: 300;
+  }
+
+  .tab_picture {
+      display: inline-block;
+      overflow: hidden;
+      /* border: 1px solid #ccc; */
+      
+  }
+  .tab_picture button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 13px;
+    border: 0.5px solid #ccc;
+}
+
+  .tab_picture ,.text-heading {
+      margin-bottom: 32px;
+  } 
+
+
+  #amazing-work button:hover {
+        color: var(--blue);
+        border-top: 2px solid var(--blue);
+        /* border: none; */
+  }
+
+  .button {
+      position: absolute;
+      bottom: 30px;
+  }
+
+
+
 
