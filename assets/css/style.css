@@ -320,6 +320,7 @@ a {
   .skills .content {
     margin: 86px 0;
     position: absolute;
+    background-color: var(--background);
   }
   
   .skills {
