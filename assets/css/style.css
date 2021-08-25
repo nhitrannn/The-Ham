@@ -53,6 +53,9 @@ a {
     padding-left: 12px;
 }
 
+.mgr {
+    margin-right: 12px;
+}
 
 
 
@@ -191,11 +194,12 @@ a {
 #option {
     position: relative;
     top: 90px;
-    display: inline-flex;
-    height: 263px;
-    width: 100%;
+    width: 85rem;
     justify-content: center;
     background-color: var(--darkgray);
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #option .image {
@@ -214,6 +218,10 @@ a {
     position: relative;
     top: 90px;
     height: 520px;
+    width: 85rem;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #features .content {
@@ -287,9 +295,11 @@ a {
   .tab button:hover {
     /* box-shadow: 0 3px var(--blue); */
     color: var(--blue);
+    border-top: 1px solid var(--blue);
+    
   }
   .tab button.active {
-    box-shadow: 0 2px var(--blue);
+    border-top: 1px solid var(--blue);
     color: var(--blue);
   }
   
@@ -335,52 +345,49 @@ a {
   .html-css {width: 90%; background-color: #20bc9d;}
   .app-design {width: 70%; background-color: #bb8a36;}
 
-  /*=============== amazing-work ========================*/
-  #amazing-work {
-      position: relative;
-      width: 100%;
-      background-color: #fff;
-      top: 90px;
-      /* bottom: 30px; */
-      height: 1012px;
-  }
 
-  .picture {
+
+  /*=============== amazing-work ========================*/
+#amazing-work {
+    position: relative;
+    width: 100%;
+    background-color: #f8fcfe;
+    top: 90px;
+    height: 1012px;
+}
+
+.picture {
       /* position: absolute; */
       text-align: center;
       padding: 64px 0;
-  }
-  .tab_picture_item {
-      position: absolute;
-      padding: 0 232px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr ;
-      margin-left: auto;
-      margin-right: auto;
-      /* width: 72rem; */
-      max-width: 100%;
-      /* grid-column-gap: 40px ;
-      grid-row-gap: 40px ; */
-      width: 100%
-  }
+}
+.tab_picture_item {
+    padding: 0 232px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72rem;
+    max-width: 100%;
+    width: 85rem;
+}
 
-  .tab_picture_item img {
+.tab_picture_item img {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .text-heading{
-      font-size: 32px;
-      font-weight: 300;
-  }
+.text-heading{
+    font-size: 32px;
+    font-weight: 300;
+}
 
-  .tab_picture {
-      display: inline-block;
-      overflow: hidden;
-      /* border: 1px solid #ccc; */
-      
-  }
-  .tab_picture button {
+.tab_picture {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.tab_picture button {
     background-color: inherit;
     float: left;
     border: none;
@@ -392,21 +399,28 @@ a {
     border: 0.5px solid #ccc;
 }
 
-  .tab_picture ,.text-heading {
+.tab_picture ,.text-heading {
       margin-bottom: 32px;
-  } 
+} 
 
+#amazing-work button:hover {
+    color: var(--blue);
+    border-top: 2px solid var(--blue);
+}
 
-  #amazing-work button:hover {
-        color: var(--blue);
-        border-top: 2px solid var(--blue);
-        /* border: none; */
-  }
-
-  .button {
-      position: absolute;
-      bottom: 30px;
-  }
+#amazing-work .button button {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
 
