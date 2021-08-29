@@ -33,6 +33,7 @@ a {
     --black: #090f14;
     --text: #717171;
     --background: #090f14;
+    --element: #f8fcfe;
 }
 
 .blue-color {
@@ -55,6 +56,35 @@ a {
 
 .mgr {
     margin-right: 12px;
+}
+
+
+.line {
+    text-align: -webkit-center;
+    margin-bottom: 46px;
+}
+h2 {
+    position: relative;
+    width: 7rem;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+}
+
+h2::before, h2::after {
+    content: '';
+    border-top: 1px solid var(--blue);
+    width: 98px;
+}
+h2::after {
+    margin: 4px 0;
+    left: 0;
+}
+
+h2::before {
+    position: absolute; 
+    right: 0;
 }
 
 
@@ -225,11 +255,11 @@ a {
 }
 
 #features .content {
-    margin: 92px 233px;
+    margin: 59px 233px;
 }
  .heading-text p {
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: 300;
     text-align: center;
 }
@@ -272,7 +302,6 @@ a {
 }
 .tab {
     overflow: hidden;
-    /* border: 1px solid #ccc; */
     background-color: #f1f1f1;
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -318,8 +347,8 @@ a {
   }
 
   .skills .content {
-    margin: 86px 0;
-    position: absolute;
+    margin: 52px 0;
+    /* position: absolute; */
     background-color: var(--background);
   }
   
@@ -338,6 +367,7 @@ a {
 
   .skills p, .skills .tab {
       margin-bottom: 16px;
+      background-color: var(--background);
   }
   
   .user-interface {width: 60%; background-color: #9c5da5;}
@@ -358,19 +388,19 @@ a {
 }
 
 .picture {
-      /* position: absolute; */
-      text-align: center;
-      padding: 64px 0;
+    /* position: absolute; */
+    text-align: center;
+    padding: 64px 0;
 }
+
 .tab_picture_item {
     padding: 0 232px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-    width: 72rem;
-    max-width: 100%;
-    width: 85rem;
+    max-width: 85rem;
+    width: 100% ;
 }
 
 .tab_picture_item img {
@@ -383,6 +413,7 @@ a {
     font-weight: 300;
 }
 
+/* line-heading */
 .tab_picture {
     display: inline-block;
     overflow: hidden;
@@ -401,7 +432,7 @@ a {
 }
 
 .tab_picture ,.text-heading {
-      margin-bottom: 32px;
+      margin-bottom: 20px;
 } 
 
 #amazing-work button:hover {
@@ -422,7 +453,87 @@ a {
     border-radius: 5px;
     text-align: center;
 }
+/* our service */
+#our-service {
+    position: relative;
+    max-width: 100% ;
+    width: 56rem;
+    height: 300px;
+    top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#our-service .heading-text {
+    font-size: 32px;
+    text-align: center;
+}
+.service {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+
+}
+
+.service button {
+    position: relative;
+    background-color: var(--element);
+    /* float: left; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transform: 0.3s;
+    font-size: 17px;
+}
+
+/* .service button::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-top: 0px solid #000 ;
+    border-right: 2px solid #000 ;
+    border-bottom: 2px solid #000 ;
+    border-left: 0px solid #000 ;
+    top: 99%;
+    left: 50%;
+    margin-left: -25px;
+} */
 
 
+.service button:hover {
+    background-color: #ccc;
+}
 
+.service button.active {
+     background-color: var(--blue);
+     color: #fff;
+}
 
+.service_tabcontent {
+    position: relative;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.service_tabcontent_items {
+    display: flex;
+    padding: 12px;
+}
+
+.service_tabcontent img {
+    width: 25%;
+    margin-right: 12px;
+    /* height: 100%; */
+}
+
+.service_tabcontent p {
+    width: 75%;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+
+}

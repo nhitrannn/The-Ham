@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+    <!-- js skill -->
+    <script>
+         // js skill 
+        function openSkill(evt, skillName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(skillName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+        //js service
+        function opentab(evt, tabName) {
+        var i, service_tabcontent, tablink;
+        service_tabcontent = document.getElementsByClassName("service_tabcontent");
+        for(i=0; i<service_tabcontent.length; i++) {
+            service_tabcontent[i].style.display = "none";
+        }
+        tablink = document.getElementsByClassName("tablink");
+        for(i=0; i<tablink.length; i++) {
+            tablink[i].className = tablink[i].className.replace(" active", ""); 
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+   
+
 <body>
     <div id="main">
 
@@ -65,6 +100,9 @@
                 <div class="heading-text">
                     <p>Creative Amazing features</p>
                     <!-- <img src="assets/img/line.png" style="width: 100%;" alt=""> -->
+                </div>
+                <div class="line">
+                    <h2></h2>
                 </div>
     
                 <div class="many-features">
@@ -157,11 +195,14 @@
 
             <div class="skills">
                 <div class="content">
-                    <p class="heading-text">About Our Company</p>
+                    <p  class="heading-text">About Our Company</p>
+                    <div class="line"></div>
+                        <h2></h2>
+                    </div>
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'OurHistory')">OUR STORY</button>
-                        <button class="tablinks" onclick="openCity(event, 'OurPhotography')">OUR PHOTOGRAPHY</button>
-                        <button class="tablinks" onclick="openCity(event, 'OurSkills')">OUR SKILLS</button>
+                        <button class="tablinks" onclick="openSkill(event, 'OurHistory')">OUR STORY</button>
+                        <button class="tablinks" onclick="openSkill(event, 'OurPhotography')">OUR PHOTOGRAPHY</button>
+                        <button class="tablinks" onclick="openSkill(event, 'OurSkills')">OUR SKILLS</button>
                     </div>
                 
                     <div id="OurHistory" class="tabcontent">
@@ -223,9 +264,11 @@
 
         <!-- amazing-work -->
         <div id="amazing-work">
-            
             <div class="picture">
                 <p class="text-heading">Our Amazing Work</p>
+                <div class="line">
+                    <h2></h2>
+                </div>
                 <div class="tab_picture">
                     <button class="tablink" onclick="openCity(event, 'All')">All</button>
                     <button class="tablink" onclick="openCity(event, 'GraphicDesign')">Graphic Design</button>
@@ -255,40 +298,115 @@
            
         </div>
         
+        <div id="our-service">
+            <p class="heading-text">Our Services</p>
+            <div class="line">
+                <h2></h2>
+            </div>
+        <!-- our-services -->
+            <div class="service">
+                <button class="tablink" onclick="opentab(event,'webdesign')"><div class="arrow-down"></div>Web Design</button>
+                <button class="tablink" onclick="opentab(event,'graphicdesign')">Graphic Design</button>
+                <button class="tablink" onclick="opentab(event,'onlinesupport')">Online Support</button>
+                <button class="tablink" onclick="opentab(event,'appdesign')">App Design</button>
+                <button class="tablink" onclick="opentab(event,'onlinemarketing')">Online Marketing</button>
+                <button class="tablink" onclick="opentab(event,'seoservice')">Seo Service</button>
+            </div>
+            <div id="webdesign" class="service_tabcontent">
+                <div class="service_tabcontent_items">
+                    <img src="assets/img/pro-10.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                    ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                    ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                    explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                    quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                    Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                    odio molestias.</p> 
+                </div>
+            </div>
+            <div id="graphicdesign" class="service_tabcontent">
+                <div class="service_tabcontent_items">
+                    <img src="assets/img/pro-7.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                        explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                        quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                        Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                        odio molestias.</p> 
+                </div>
+             </div>
+             <div id="onlinesupport" class="service_tabcontent">
+                 <div class="service_tabcontent_items">
+                     <img src="assets/img/pro-8.jpg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                        explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                        quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                        Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                        odio molestias.</p> 
+                 </div>
+             </div>
+             <div id="appdesign" class="service_tabcontent">
+                 <div class="service_tabcontent_items">
+                     <img src="assets/img/pro-4.jpg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                        explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                        quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                        Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                        odio molestias.</p> 
+                 </div>
+             </div>
+             <div id="onlinemarketing" class="service_tabcontent">
+                 <div class="service_tabcontent_items">
+                     <img src="assets/img/pro-2.jpg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                        explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                        quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                        Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                        odio molestias.</p> 
+                 </div>
+             </div>
+             <div id="seoservice" class="service_tabcontent">
+                 <div class="service_tabcontent_items">
+                     <img src="assets/img/pro-1.jpg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa corrupti repudiandae aperiam
+                        ad quo excepturi sed eligendi eveniet illo qui, ea neque similique totam fugit quae vitae, ipsum praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus fugit eos vitae. Laudantium, 
+                        explicabo atque? Consequuntur dolorum quia expedita, numquam animi pariatur aliquid dignissimos possimus
+                        quibusdam, rem eos exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, itaque dicta?
+                        Maxime consectetur, veniam, amet nemo nisi iste quidem labore reiciendis rem commodi nihil quia praesentium id maiores,
+                        odio molestias.</p> 
+                 </div>
+             </div>
+        </div>
     </div>
+
+
+
+
+
+    </div>
+    <!-- js our-service -->
+    <script>
+        
+    </script>
 </body>
-
-<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-</script>
-<!-- <script>
-    function openCity(evt, cityName) {
-      var i, tab_picture_item, tablinks;
-      tab_picture_item = document.getElementsByClassName("tab_picture_item");
-      for (i = 0; i < tab_picture_item.length; i++) {
-        tab_picture_item[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    } -->
-
-</script>
-
-
 </html>
