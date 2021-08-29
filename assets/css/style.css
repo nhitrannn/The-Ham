@@ -458,7 +458,7 @@ h2::before {
     position: relative;
     max-width: 100% ;
     width: 56rem;
-    height: 300px;
+    height: 480px;
     top: 90px;
     margin-left: auto;
     margin-right: auto;
@@ -467,6 +467,8 @@ h2::before {
 #our-service .heading-text {
     font-size: 32px;
     text-align: center;
+    margin-top: 48px;
+    margin-bottom: 16px;
 }
 .service {
     overflow: hidden;
@@ -478,13 +480,13 @@ h2::before {
 .service button {
     position: relative;
     background-color: var(--element);
-    /* float: left; */
+    float: left;
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 14px 20px;
+    padding: 14px 25px;
     transform: 0.3s;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 /* .service button::after {
@@ -514,26 +516,27 @@ h2::before {
 .service_tabcontent {
     position: relative;
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-top: none;
+    padding-top: 16px;
 }
 
 .service_tabcontent_items {
     display: flex;
-    padding: 12px;
 }
 
 .service_tabcontent img {
-    width: 25%;
-    margin-right: 12px;
+    width: 15%;
+    height: 50%;
+    margin-right: 16px;
     /* height: 100%; */
 }
 
 .service_tabcontent p {
-    width: 75%;
+    width: 85%;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: justify;
+    color: var(--text);
 
 }
