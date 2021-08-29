@@ -34,6 +34,7 @@ a {
     --text: #717171;
     --background: #090f14;
     --element: #f8fcfe;
+    --install-bgr: #40474b;
 }
 
 .blue-color {
@@ -56,6 +57,10 @@ a {
 
 .mgr {
     margin-right: 12px;
+}
+
+.mgb {
+    margin-bottom: 32px;
 }
 
 
@@ -453,12 +458,14 @@ h2::before {
     border-radius: 5px;
     text-align: center;
 }
+
+
 /* our service */
 #our-service {
     position: relative;
     max-width: 100% ;
     width: 56rem;
-    height: 480px;
+    height: 450px;
     top: 90px;
     margin-left: auto;
     margin-right: auto;
@@ -467,7 +474,7 @@ h2::before {
 #our-service .heading-text {
     font-size: 32px;
     text-align: center;
-    margin-top: 48px;
+    margin-top: 87px;
     margin-bottom: 16px;
 }
 .service {
@@ -538,5 +545,96 @@ h2::before {
     line-height: 1.6;
     text-align: justify;
     color: var(--text);
+}
+
+/* install-now */
+#install-now {
+    position: relative;
+    top: 90px;
+    background-color: var(--install-bgr);
+    /* color: var(--blue); */
+}
+
+#install-now .content { 
+    width: 100%;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 112px 0;
+}
+
+#install-now .content h1 {
+    color: var(--blue);
+}
+#install-now .content p {
+    color: #fff;
+    margin-top: 23px;
+    margin-bottom: 76px;
+}
+
+/* breaking-news */
+#breaking-news {
+    position:relative;
+    top: 90px;
+    padding: 72px 0;
+}
+
+#breaking-news .content {
+    width: 100%;
+    max-width: 56rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.content_items img {
+    width: 100%;
+}
+
+.content_items {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px ;
+    grid-row-gap: 20px ;
 
 }
+
+.content .items {
+    border: 1px solid #bbb;
+}
+
+.items_infor {
+    padding: 24px 12px;
+    background-color: var(--element);
+    text-align: left;
+    color: var(--text);
+}
+.items_infor h4 {
+    margin-bottom: 12px;
+}
+
+.items_infor p {
+    font-size: 14px;
+}
+
+.items_infor h4:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.items::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #203e38;
+    background-color: #203e38;
+    margin-left: 155px;
+}
+
+.items::before:hover {
+    color: var(--blue);
+}
+
