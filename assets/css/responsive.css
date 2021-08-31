@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+    #pricing-table .columns {
+      width: 100%;
+    }
+}

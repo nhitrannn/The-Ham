@@ -11,7 +11,7 @@
 </head>
 
     <!-- js skill -->
-    <script>
+    <script type="text/javascript">
          // js skill 
         function openSkill(evt, skillName) {
         var i, tabcontent, tablinks;
@@ -40,7 +40,14 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
-    }
+        }
+
+
+        // slide show
+        function imgSlider(slideShow) {
+                document.querySelector('#avatar').src = slideShow;
+        }
+
     </script>
    
 
@@ -197,7 +204,7 @@
                 <div class="content">
                     <p  class="heading-text">About Our Company</p>
                     <div class="line"></div>
-                        <h2></h2>
+                        <h2 style="padding-left: 100px; width: 13rem;"></h2>
                     </div>
                     <div class="tab">
                         <button class="tablinks" onclick="openSkill(event, 'OurHistory')">OUR STORY</button>
@@ -458,14 +465,110 @@
                 </div>
         </div>
 
+        <div id="row-item">
+            <div class="image">
+                <img src="assets/img/work.png" alt="">
+                <img src="assets/img/customer.png" alt="">
+                <img src="assets/img/purrchase.png" alt="">
+                <img src="assets/img/office.png" alt="">
+            </div>
+        </div>
+
+        <div id="pricing-table">
+            <h1>Our Pricing Table</h1>
+            <div class="line">
+                <h2></h2>
+            </div>
+            <div class="table">
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">PERSONNAL</li>
+                        <li class="dark-blue"><i class="fas fa-dollar-sign"></i>99<span>/Month</span></li>
+                        <li>1 Hosting</li>
+                        <li>2 Email Marketing</li>
+                        <li>5 Database</li>
+                        <li>2 Design Pack</li>
+                        <li>3 Website Layout</li>
+                        <li>5 Header Style</li>
+                        <li>3 Online Store</li>
+                        <li><a href="#" class="button dark-blue">BUY NOW</a></li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">BUSINESS</li>
+                        <li class="dark-blue"><i class="fas fa-dollar-sign"></i>199<span>/Month</span></li>
+                        <li>1 Hosting</li>
+                        <li>2 Email Marketing</li>
+                        <li>5 Database</li>
+                        <li>2 Design Pack</li>
+                        <li>3 Website Layout</li>
+                        <li>5 Header Style</li>
+                        <li>3 Online Store</li>
+                        <li><a href="#" class="button dark-blue">BUY NOW</a></li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <div class="trapezium"></div>
+                    <ul class="price">
+                        <li class="header-mix">PROFESTIONAL</li>
+                        <li class="dark-blue-mix"><i class="fas fa-dollar-sign"></i>299<span>/Month</span></li>
+                        <li>1 Hosting</li>
+                        <li>2 Email Marketing</li>
+                        <li>5 Database</li>
+                        <li>2 Design Pack</li>
+                        <li>3 Website Layout</li>
+                        <li>5 Header Style</li>
+                        <li>3 Online Store</li>
+                        <li><a href="#" class="button dark-blue-mix">BUY NOW</a></li>
+                    </ul>
+                </div>
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">DIAMOND</li>
+                        <li class="dark-blue"><i class="fas fa-dollar-sign"></i>299<span>/Month</span></li>
+                        <li>1 Hosting</li>
+                        <li>2 Email Marketing</li>
+                        <li>5 Database</li>
+                        <li>2 Design Pack</li>
+                        <li>3 Website Layout</li>
+                        <li>5 Header Style</li>
+                        <li>3 Online Store</li>
+                        <li><a href="#" class="button dark-blue">BUY NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="people_say">
+            <div class="people_say__content">
+                <h1>What People Say About theHam</h1>
+                <div class="line">
+                    <h2></h2>
+                </div>
+                <img class="quotes" src="assets/img/quotes-removebg-preview.png" alt="">
+                <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, 
+                    non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. 
+                    Tempus ultricies luctus, quam dui laoreet sem.
+                </p>
+                <div class="people_say__content__imgbox">
+                    <h4>HASAN ALI</h4>
+                    <p>UX Designer</p>
+                    <img src="assets/img/img1.png" alt="" id="avatar">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="assets/img/thumb1.png" onclick="imgSlider('assets/img/img1.png')" alt=""></li>
+                <li><img src="assets/img/thumb2.png" onclick="imgSlider('assets/img/img2.png')" alt=""></li>
+                <li><img src="assets/img/thumb3.png" onclick="imgSlider('assets/img/img3.png')" alt=""></li>
+                <li><img src="assets/img/thumb4.png" onclick="imgSlider('assets/img/img4.png')" alt=""></li>
+            </ul>
+        </div>
     </div>
 
 
-
-
-
     </div>
-    <!-- js our-service -->
     <script>
         
     </script>
