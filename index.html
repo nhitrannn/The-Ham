@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ham</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -196,77 +197,79 @@
 
         <!-- our company -->
         <div id="our-company">
-            <div class="image">
-                <!-- <img src="assets/img/laptop.jpg" alt="laptop"> -->
-            </div>
-
-            <div class="skills">
-                <div class="content">
-                    <p  class="heading-text">About Our Company</p>
-                    <div class="line"></div>
-                        <h2 style="padding-left: 100px; width: 13rem;"></h2>
-                    </div>
-                    <div class="tab">
-                        <button class="tablinks" onclick="openSkill(event, 'OurHistory')">OUR STORY</button>
-                        <button class="tablinks" onclick="openSkill(event, 'OurPhotography')">OUR PHOTOGRAPHY</button>
-                        <button class="tablinks" onclick="openSkill(event, 'OurSkills')">OUR SKILLS</button>
-                    </div>
-                
-                    <div id="OurHistory" class="tabcontent">
-                        <div class="container">
-                          <div class="skills user-interface padding-left">USER INTERFACE</div>
+            <div class="our-company_content">
+                <div class="image">
+                    <img src="assets/img/company.jpg" alt="laptop">
+                </div>
+    
+                <div class="skills">
+                    <div class="content">
+                        <p  class="heading-text">About Our Company</p>
+                        <div class="line"></div>
+                            <h2 style="padding-left: 100px; width: 13rem;"></h2>
                         </div>
-                        <div class="container">
-                          <div class="skills web-design padding-left">WEB DESIGN</div>
+                        <div class="tab">
+                            <button class="tablinks" onclick="openSkill(event, 'OurHistory')">OUR STORY</button>
+                            <button class="tablinks" onclick="openSkill(event, 'OurPhotography')">OUR PHOTOGRAPHY</button>
+                            <button class="tablinks" onclick="openSkill(event, 'OurSkills')">OUR SKILLS</button>
                         </div>
-                        <div class="container">
-                          <div class="skills wordpress padding-left">WORDPRESS</div>
+                    
+                        <div id="OurHistory" class="tabcontent">
+                            <div class="container">
+                              <div class="skills user-interface padding-left">USER INTERFACE</div>
+                            </div>
+                            <div class="container">
+                              <div class="skills web-design padding-left">WEB DESIGN</div>
+                            </div>
+                            <div class="container">
+                              <div class="skills wordpress padding-left">WORDPRESS</div>
+                            </div>
+                            <div class="container">
+                              <div class="skills html-css padding-left">HTML & CSS</div>
+                            </div>
+                            <div class="container">
+                                <div class="skills app-design padding-left">APP DESIGN</div>
+                            </div>
                         </div>
-                        <div class="container">
-                          <div class="skills html-css padding-left">HTML & CSS</div>
+                        <div id="OurPhotography" class="tabcontent">
+                            <div class="container">
+                                <div class="skills user-interface padding-left">USER INTERFACE</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills web-design padding-left">WEB DESIGN</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills wordpress padding-left">WORDPRESS</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills html-css padding-left">HTML & CSS</div>
+                              </div>
+                              <div class="container">
+                                  <div class="skills app-design padding-left">APP DESIGN</div>
+                              </div>
                         </div>
-                        <div class="container">
-                            <div class="skills app-design padding-left">APP DESIGN</div>
+                    
+                        <div id="OurSkills" class="tabcontent">
+                            <div class="container">
+                                <div class="skills user-interface padding-left">USER INTERFACE</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills web-design padding-left">WEB DESIGN</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills wordpress padding-left">WORDPRESS</div>
+                              </div>
+                              <div class="container">
+                                <div class="skills html-css padding-left">HTML & CSS</div>
+                              </div>
+                              <div class="container">
+                                  <div class="skills app-design padding-left">APP DESIGN</div>
+                              </div>
                         </div>
-                    </div>
-                    <div id="OurPhotography" class="tabcontent">
-                        <div class="container">
-                            <div class="skills user-interface padding-left">USER INTERFACE</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills web-design padding-left">WEB DESIGN</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills wordpress padding-left">WORDPRESS</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills html-css padding-left">HTML & CSS</div>
-                          </div>
-                          <div class="container">
-                              <div class="skills app-design padding-left">APP DESIGN</div>
-                          </div>
-                    </div>
-                
-                    <div id="OurSkills" class="tabcontent">
-                        <div class="container">
-                            <div class="skills user-interface padding-left">USER INTERFACE</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills web-design padding-left">WEB DESIGN</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills wordpress padding-left">WORDPRESS</div>
-                          </div>
-                          <div class="container">
-                            <div class="skills html-css padding-left">HTML & CSS</div>
-                          </div>
-                          <div class="container">
-                              <div class="skills app-design padding-left">APP DESIGN</div>
-                          </div>
                     </div>
                 </div>
             </div>
-        </div>
+        
 
 
         <!-- amazing-work -->
@@ -765,9 +768,6 @@
                 <p>Copyright 2015 <span>theHam</span>  | All Rights Reserved</p>
             </div>
         </div>
-    </div>
-
-
     </div>
     <script>
         

@@ -1,5 +1,43 @@
-@media only screen and (max-width: 600px) {
-    #pricing-table .columns {
-      width: 100%;
-    }
+
+/* screen */
+@media only screen and (min-width: 1024px) and (max-width: 1222px) {
+  /* header */
+  .logo img {
+    padding: 17px 0;
+  }
+  #heading {
+    padding: 0 57px;
+  }
+
+  /* #features */
+  #features .content {
+    margin: 74px 100px;
+  }
+
+  /* line */
+  .line {
+    margin-bottom: 30px;
+  }
+
+  .our-company_content img {
+    margin-left: -150px;
+    width: 130%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .tab button {
+    padding: 14px 8px;
+  } 
+
+  .tab_picture_item {
+    padding: 0 82px;
+  }
+
+  /* #our-service */
+  #our-service {
+    width: 54rem;
+  }
 }
