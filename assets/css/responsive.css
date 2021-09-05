@@ -1,12 +1,12 @@
 
 /* screen */
-@media only screen and (min-width: 1024px) and (max-width: 1222px) {
+@media only screen and (min-width: 1023px) and (max-width: 1360px) {
   /* header */
   .logo img {
     padding: 17px 0;
   }
   #heading {
-    padding: 0 57px;
+    padding: 0 60px;
   }
 
   /* #features */
@@ -28,6 +28,14 @@
     width: 90%;
   }
 
+  #our-company .tab {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab {
+    justify-content: center;
+  }
   .tab button {
     padding: 14px 8px;
   } 
@@ -36,8 +44,344 @@
     padding: 0 82px;
   }
 
+
+
   /* #our-service */
   #our-service {
     width: 54rem;
   }
+
+  .service button {
+    padding: 14px 22px;
+  }
+}
+
+
+/* tablet */
+@media only screen and (max-width: 1023px) {
+
+  #heading {
+    padding: 0 60px;
+  }
+  
+  .nav_bars-btn {
+    display: block;
+    margin-left: 350px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+
+
+
+
+
+/* #features .content */
+
+  #features {
+    height: 565px;
+  }
+  #features .content {
+    margin: 59px 87px;
+  }
+
+  .head {
+    font-size: 14px;
+  }
+
+  .row {
+    grid-column-gap: 20px;
+    margin-bottom: 35px;
+  }
+
+  /* our-company */
+
+  #our-company {
+    height: 1025px
+  }
+  .our-company_content{
+    /* display: block; */
+    width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+   
+  .tabcontent {
+    max-width: 38.5rem;
+  }
+
+  .skills .content {
+    margin: 52px 121px;
+  }
+
+  /* #amazing-work */
+  #amazing-work {
+    height: 820px;
+  }
+  .tab_picture_item {
+    padding: 0 85px;
+  }
+
+  /* service */
+  .service {
+    width: 40rem;
+  }
+  .service button {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  .service_tabcontent_items {
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service_tabcontent img {
+    width: 36%;
+  }
+
+  .service_tabcontent p {
+    line-height: 1.5;
+  }
+
+  /*  */
+  #breaking-news .content {
+    max-width: 36rem;
+  }
+
+  .content_items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* pricing-table */
+  #pricing-table .table {
+    max-width: 37rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .people_say__content {
+    max-width: 38rem;
+  }
+
+  /* meet-our-team */ 
+  #meet-our-team {
+    max-width: 37rem;
+    height: 1015px;
+  }
+  .meet-our-team_coupon {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+
+  .coupon_items img {
+    width: 100%;
+  }
+
+  /*  */
+  #slide-2 h1, #slide-2 span {
+    font-size: 28px;
+  }
+
+  /* keep-me-touch */
+  #keep-me-touch {
+    height: 445px;
+  }
+
+  .submit {
+    width: 78%;
+  } 
+
+  .form-submit textarea {
+    height: 88px;
+  }
+
+  /*footer  */
+  .footer_content {
+    grid-template-columns: 1fr 1fr;
+    max-width: 38rem;
+  }
+  .footer_content__col_4 .image {
+    /* grid-template-columns: 1fr; */
+  }
+  
+
+    @media only screen and (max-width: 766px) {
+      /* nav */
+      #heading {
+        padding: 0 20px;
+      }
+      .nav_bars-btn {
+        margin-left: 140px;
+      }
+
+      /* slider */
+      #slider .content {
+        bottom: 97px;
+      }
+      #slider .text p, #slider .text h1 {
+        margin: 12px 25px;
+      }
+
+      /* fearture */
+      #features .content {
+        margin: 59px 23px;
+      }
+
+      #features {
+        height: 710px;
+      }
+      .row {
+        grid-column-gap: 16px;
+        margin-bottom: 30px;
+      }
+
+      /*  */
+      .skills .content {
+          margin: 52px 46px;
+      }
+      .tab button {
+        padding: 12px 8px;
+      }
+
+      .container {
+        width: 72%;
+      }
+
+
+      /*  */
+      #amazing-work {
+        height: 862px;
+      }
+
+      .tab_picture button {
+        padding: 12px 5px;
+      }
+
+
+      .tab_picture_item {
+        padding: 0 19px;
+      }
+
+      .tab_picture_item {
+        grid-template-columns: 1fr 1fr 1fr
+      }
+
+      /*  */
+      #our-service .heading-text {
+        margin-top: 55px;
+      }
+
+
+      /*  */
+      #install-now .content {
+        max-width: 23rem;
+      }
+
+      #pricing-table .price li {
+        padding: 16px;
+      }
+
+      #people_say {
+        height: 745px;
+      }
+
+      .people_say__content {
+        max-width: 24rem;
+      }  
+
+
+
+      /* meet our team */
+      .meet-our-team_coupon {
+        grid-template-columns: unset;
+        grid-auto-flow: column;
+        grid-auto-columns: 80%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+      }
+
+      .coupon_items {
+        scroll-snap-align: center;
+      }
+
+      .meet-our-team_coupon {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .meet-our-team_coupon::-webkit-scrollbar {
+        display: none;
+      }
+      .coupon_items img {
+        width: 100%;
+      }
+
+      #meet-our-team {
+        max-width: 24rem;
+        height: 610px;
+      }
+
+
+      /*  */
+      #slide-2 {
+        height: 1070px;
+      }
+      .slider-2_content {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: unset
+      }
+
+      ul.list-check {
+        margin: 12px 68px;
+      }
+
+      #slide-2 img {
+        width: 92%;
+      }
+
+      /*  */
+      .keep-me-touch_content {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: unset;
+        grid-row-gap: 10px;
+      }
+
+      #keep-me-touch {
+        height: 840px;
+      }
+
+      .keep-me-touch_content img {
+        width: 100%; 
+      }
+
+      .keep-me-touch_content h1 {
+        text-align: center;
+      }
+      .submit {
+        width: 100%;
+       }
+
+       .line {
+        padding-left: 134px;
+        width: 18rem;
+       }
+
+
+      /* footer */
+      .footer_content {
+        grid-template-columns: unset;
+        max-width: 24rem;
+
+    }
+    .footer_content__col_4 img {
+      width: 100%;
+    }
+
+}
 }

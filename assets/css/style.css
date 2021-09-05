@@ -127,16 +127,25 @@ h2::before {
     width: 80%;
 }
 
-#nav {
+.nav {
     /* position: absolute; */
     display: inline-block;
+}
+
+/* nav responsive tablet */
+.nav_bars-btn {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 115px;
+    display: none;
 }
 
 #heading ul {
     margin-left: 64px;
 }
 
-#nav a {
+.nav a {
     /* display: inline-block; */
     line-height: 90px;
     padding: 0 7px;
@@ -145,11 +154,11 @@ h2::before {
 }
 
 
-#nav a:hover {
+.nav a:hover {
     color: var(--blue);
 }
 
-#nav li:hover {
+.nav li:hover {
     box-shadow: 0 2px var(--blue);
 }
 
@@ -491,9 +500,12 @@ h2::before {
     margin-bottom: 16px;
 }
 .service {
+    display: flex;
+    max-width: 100% ;
+    width: 56rem;
     overflow: hidden;
-    background-color: #f1f1f1;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service button {
@@ -502,7 +514,7 @@ h2::before {
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 14px 23px;
+    padding: 14px 25px;
     transform: 0.3s;
     font-size: 16px;
 }
@@ -636,20 +648,7 @@ h2::before {
     cursor: pointer;
 }
 
-.items::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #203e38;
-    background-color: #203e38;
-    margin-left: 155px;
-}
-
-.items::before:hover {
-    color: var(--blue);
-}
-
+/* #pricing-table .table
 /* row-item */
 #row-item {
     position: relative;
@@ -921,7 +920,7 @@ h2::before {
     color: white;
 }
 .coupon_items img {
-    width: 215px;
+    width: 100%;
 }
 
 .coupon_items ul {
